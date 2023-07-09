@@ -1,0 +1,199 @@
+*{
+margin:0;
+padding:0;
+font-style:san-serif,serif;
+}
+.banner{
+	width:100%;
+	height:20vh;
+	background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(depback.jpg);
+	background-size: cover;
+	background-position:center;
+}
+.navbar{
+	float:right;
+	height:10px 0;
+	width:100%;
+	margin:auto;
+	padding:5px;
+	display:flex;
+	align-items:right;
+	justify-content:space-between;
+	background:rgba(0,0,0,0.9)
+}
+.navbar ul li{
+	list-style:none;
+	display:inline-block;
+	margin-bottom:5px;
+	margin-left:10px;
+	margin-right:50px;
+	margin-top:5px;
+	font-size:20px;
+	position:relative;
+	text-align:center;
+}
+.navbar ul li a{
+	text-decoration:none;
+	color:white;
+	text-transform:uppercase;
+}
+.navbar ul li::after{
+		content:'';
+		height:1px;
+		width: 0%;
+		background:#009688;
+		position: absolute; 
+		left:0;
+		bottom:-1px;
+		transition:0.1s;
+		color:black;
+}
+.navbar ul li:hover::after{
+	width:100;
+}	
+.logo{
+	width:60px;
+	margin-left:20px;
+	color:white;
+	font-size:25px;
+	font-family:hebrew;
+	float:left;
+	display:inline-block;
+}
+.icon{
+	width:100px;
+	float:left;
+	height:30px;
+}
+.menu ul{
+	background:white(0,0,0,0.9)
+}
+.menu{
+	width:100px;
+	float:right;
+	height:10px;
+}
+ul{
+	float:right;
+	display:flex;
+	justify-content:right;
+	align-items:left;
+}
+ul li{
+	list-style:none;
+	margin-left:10px;
+	margin-top:20px;
+	font-size:14px;
+}
+
+ul li a{
+	text-decoration:none;
+	color:white;
+	font-family:armenian;
+	font-weight:bold;
+	transition:0.5s ease-in-out;
+	margin-left:1px;
+	margin-right:1px;
+}
+ul li a:hover{
+	color:blue;
+}
+.banner-text{
+	text-align:center;
+	color: white;
+}
+.banner-text h1{
+	padding-top:55px;
+	font-size: 50px;
+	font-family:Times New Roman;
+	font-style:bold;
+	float:center;
+}
+@media(max-width:700px){
+	.banner-text h1{
+		font-size:20px;
+	}
+	.navbar-links{
+		position:absolute;
+		background:white;
+		height:100vh;
+		width:200px;
+		top:0;
+		right:0;
+		text-align:left;
+		z-index:2;
+	}
+}
+	
+.nav{
+	width:100%;
+	height:73vh;
+	background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(default.jpg);
+	background-size: cover;
+	background-position:center;
+	float:center;
+	margin-top:15px;
+	margin-bottom:20px;
+	padding-top:10px;
+	padding-bottom:35px;
+	justify-content:space-between;
+	text-align:center;
+}
+.container{
+	padding-top:2px;
+	width: 100%;
+	height: 100px;
+	background-position: center;
+	background-size: cover;
+	box-sizing: border-box;
+}
+.col{
+	border:90px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-flow: wrap;
+	padding-top:1px;
+}
+.col h2{
+	padding-top:300px;
+	font-size:35px;
+	color:white;
+}
+.col p{
+	font-size:15px;
+	color:white;
+	text-shadow:5px #999;
+	font-family:hebrew;
+}
+.col u{
+	font-family:monotype corsiva;
+	color:blue;
+}	
+.card{
+	width:300px;
+	height: 300px;
+	display:justify;
+	border-radius: 150px;
+	box-sizing: border-box;
+	cursor: pointer;
+	margin: 20px;
+	background-position:center;
+	background-size: cover;
+	transition: transform 0.5s;	
+}
+.card:hover{
+transform: translateY(-10px);
+}
+.card1{
+background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(Aguilar.jpg);
+}
+
+.card2{
+background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(Halliahbusimen.jpg);
+}
+
+.card3{
+background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(Julymaligdongn.jpg);
+
+}
